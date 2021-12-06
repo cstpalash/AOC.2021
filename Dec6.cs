@@ -49,7 +49,7 @@ namespace AOC._2021
 
             for (int i = fish + 1; i <= days; i = i + 7) //first reproduce on day fish + 1
             {
-                totalFishes += 1 + GetTotalReproduction(8, days - i);
+                totalFishes += 1 + GetTotalReproduction(8, days - i); //Reproduce a fish 8
             }
 
             return totalFishes;
