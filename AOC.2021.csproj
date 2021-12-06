@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>AOC._2021</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Input\" />
+    <None Remove="Input\Dec1.txt" />
+    <None Remove="Input\Dec2.txt" />
+    <None Remove="Input\Dec3.txt" />
+    <None Remove="Input\Dec4.txt" />
+    <None Remove="Input\Dec6.txt" />
+    <None Remove="Input\Dec7.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Input\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input\Dec1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec5.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec6.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec7.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Input\Dec5.cs" />
+  </ItemGroup>
+</Project>
