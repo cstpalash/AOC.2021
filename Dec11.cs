@@ -166,7 +166,7 @@ namespace AOC._2021
 
                 totalFlashes += flashTracker.Count;
 
-                if (IsAllFlashing(octopusBoard, rows, cols)) return step;
+                if (flashTracker.Count == rows * cols) return step;
             }
 
             return 0;
