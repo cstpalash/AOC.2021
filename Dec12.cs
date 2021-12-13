@@ -49,13 +49,17 @@ namespace AOC._2021
                         if (point != "start")
                         {
                             var smallCaveVisitMap = GetSmallCaveVisitMap(path);
-                            bool allowed = true;
+
+                            bool allowedPath = true;
+
                             if (IsSmallCave(point) &&
                                 smallCaveVisitMap.ContainsKey(point) &&
                                 smallCaveVisitMap[point] == 1)
-                                allowed = false;
-
-                            if (allowed)
+                            {
+                                allowedPath = false;
+                            }
+                                
+                            if (allowedPath)
                             {
                                 var newpath = new List<string>(path);
                                 newpath.Add(point);
@@ -99,10 +103,10 @@ namespace AOC._2021
 
                                 if (smallCaveVisitMap[point] > 2)
                                     allowed = false;
+                                else if (smallCaveVisitMap.Values.Count(item => item > 1) > 1) {
+                                    allowed = false;
+                                }
                             }
-
-                            if (smallCaveVisitMap.Values.Count(item => item > 1) > 1)
-                                allowed = false;
 
                             if (allowed)
                             {
