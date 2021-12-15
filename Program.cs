@@ -13,10 +13,9 @@ namespace AOC._2021
             Console.WriteLine("AoC 2021");
             Console.WriteLine("=======================================================");
 
-            //Dec14();
-
-            Dec13();
+            Dec14();
             /*
+            Dec13();
             Dec12();
             Dec11();
             Dec10();
