@@ -13,8 +13,9 @@ namespace AOC._2021
             Console.WriteLine("AoC 2021");
             Console.WriteLine("=======================================================");
 
-            Dec16();
+            Dec17();
             /*
+            Dec16();
             Dec15();
             Dec14();
             Dec13();
@@ -33,6 +34,17 @@ namespace AOC._2021
             */
 
             Console.ReadLine();
+        }
+
+        private static void Dec17()
+        {
+            var date = new Dec17();
+
+            var lines = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "Input/Dec17.txt"));
+
+            Console.WriteLine(string.Format("Dec17 Puzzle1 Result : {0}", date.Puzzle1(lines)));
+            Console.WriteLine(string.Format("Dec17 Puzzle2 Result : {0}", date.Puzzle2(lines)));
+            Console.WriteLine("=======================================================");
         }
 
         private static void Dec16()
