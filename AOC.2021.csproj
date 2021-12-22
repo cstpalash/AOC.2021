@@ -25,6 +25,11 @@
     <None Remove="Input\Dec16.txt" />
     <None Remove="Input\Dec17.txt" />
     <None Remove="Input\Dec18.txt" />
+    <None Remove="Input\Dec19.txt" />
+    <None Remove="Input\Day20.txt" />
+    <None Remove="Input\Day21.txt" />
+    <None Remove="Input\Day22.txt" />
+    <None Remove="Input\Dec23.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Input\" />
@@ -82,6 +87,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Input\Dec18.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec19.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec20.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec21.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec22.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec23.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

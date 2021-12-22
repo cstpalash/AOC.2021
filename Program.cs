@@ -13,8 +13,13 @@ namespace AOC._2021
             Console.WriteLine("AoC 2021");
             Console.WriteLine("=======================================================");
 
-            Dec18();
+            Dec23();
             /*
+            Dec22();
+            Dec21();
+            Dec20();
+            Dec19();
+            Dec18();
             Dec17();
             Dec16();
             Dec15();
@@ -35,6 +40,61 @@ namespace AOC._2021
             */
 
             Console.ReadLine();
+        }
+
+        private static void Dec23()
+        {
+            var date = new Dec23();
+
+            var lines = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "Input/Dec23.txt"));
+
+            Console.WriteLine(string.Format("Dec23 Puzzle1 Result : {0}", date.Puzzle1(lines)));
+            Console.WriteLine(string.Format("Dec23 Puzzle2 Result : {0}", date.Puzzle2(lines)));
+            Console.WriteLine("=======================================================");
+        }
+
+        private static void Dec22()
+        {
+            var date = new Dec22();
+
+            var lines = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "Input/Dec22.txt"));
+
+            Console.WriteLine(string.Format("Dec22 Puzzle1 Result : {0}", date.Puzzle1(lines)));
+            Console.WriteLine(string.Format("Dec22 Puzzle2 Result : {0}", date.Puzzle2(lines)));
+            Console.WriteLine("=======================================================");
+        }
+
+        private static void Dec21()
+        {
+            var date = new Dec21();
+
+            var lines = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "Input/Dec21.txt"));
+
+            Console.WriteLine(string.Format("Dec21 Puzzle1 Result : {0}", date.Puzzle1(lines)));
+            Console.WriteLine(string.Format("Dec21 Puzzle2 Result : {0}", date.Puzzle2(lines)));
+            Console.WriteLine("=======================================================");
+        }
+
+        private static void Dec20()
+        {
+            var date = new Dec20();
+
+            var lines = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "Input/Dec20.txt"));
+
+            Console.WriteLine(string.Format("Dec20 Puzzle1 Result : {0}", date.Puzzle1(lines)));
+            Console.WriteLine(string.Format("Dec20 Puzzle2 Result : {0}", date.Puzzle2(lines)));
+            Console.WriteLine("=======================================================");
+        }
+
+        private static void Dec19()
+        {
+            var date = new Dec19();
+
+            var lines = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "Input/Dec19.txt"));
+
+            Console.WriteLine(string.Format("Dec19 Puzzle1 Result : {0}", date.Puzzle1(lines)));
+            Console.WriteLine(string.Format("Dec19 Puzzle2 Result : {0}", date.Puzzle2(lines)));
+            Console.WriteLine("=======================================================");
         }
 
         private static void Dec18()
