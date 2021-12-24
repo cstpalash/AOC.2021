@@ -2,10 +2,16 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>AOC._2021</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="Input\" />
     <None Remove="Input\Dec1.txt" />
@@ -30,6 +36,9 @@
     <None Remove="Input\Day21.txt" />
     <None Remove="Input\Day22.txt" />
     <None Remove="Input\Dec23.txt" />
+    <None Remove="Input\Dec24.txt" />
+    <None Remove="Microsoft.CodeAnalysis.CSharp.Scripting" />
+    <None Remove="Input\Dec25.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Input\" />
@@ -104,8 +113,17 @@
     <Content Include="Input\Dec23.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Input\Dec24.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Input\Dec25.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Input\Dec5.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.0.1" />
   </ItemGroup>
 </Project>
